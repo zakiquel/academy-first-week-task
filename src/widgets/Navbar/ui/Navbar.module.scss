@@ -1,0 +1,86 @@
+.Navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 8;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.headerBody {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0 25px;
+  border-bottom: 2px solid #cbcbcb;
+  -moz-column-gap: 3%;
+  column-gap: 3%;
+}
+
+.headerLogo {
+  display: flex;
+  align-items: center;
+
+  span {
+    margin-left: 5px;
+    font-size: 21px;
+    font-family: var(--font-family-text);
+    font-weight: 700;
+    color: var(--purple);
+  }
+}
+
+.headerMenu {
+  flex: 1 1 auto;
+}
+
+.headerList {
+  display: flex;
+}
+
+.menuItem {
+  margin-right: 30px;
+}
+
+.menuLink {
+  font-size: 18px;
+  color: var(--grey);
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: var(--purple);
+  }
+}
+
+.headerForm {
+
+}
+
+.loginButton {
+  margin-right: 35px;
+  color: var(--grey);
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.signUpButton {
+  border-radius: 12px;
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.headerBurger {
+
+}

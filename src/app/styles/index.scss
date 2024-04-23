@@ -1,7 +1,10 @@
 @import "reset";
+@import "variables/global";
 
 .app {
   min-height: 100vh;
+  font: var(--font-m);
+  color: var(--black);
 }
 
 .content-page {
