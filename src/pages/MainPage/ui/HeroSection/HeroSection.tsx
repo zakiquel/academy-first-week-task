@@ -21,7 +21,7 @@ export const HeroSection = memo(() => {
           </div>
           <h1 className={cls.title}>
             Enjoy Foods All Over The
-            <span>World</span>
+            <span> World</span>
           </h1>
           <p className={cls.text}>
             EatLy help you set saving goals, earn cash back offers, Go to disclaimer for more details and get paychecks up to two days early.
