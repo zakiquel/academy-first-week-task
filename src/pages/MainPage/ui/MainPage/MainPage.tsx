@@ -1,10 +1,11 @@
 import React, { memo } from 'react';
 import cls from './MainPage.module.scss'
+import {MainPageHero} from "../MainPageHero/MainPageHero";
 
 export const MainPage = () => {
   return (
     <main className={cls.MainPage}>
-      <h1>Main Page</h1>
+      <MainPageHero />
     </main>
   );
 };
