@@ -1,5 +1,5 @@
 import {memo} from 'react';
-import cls from './MainPageHero.module.scss';
+import cls from './HeroSection.module.scss';
 import {Button, ButtonTheme} from "shared/ui/Button";
 import trustPilot from 'shared/assets/icons/trustpilot.svg';
 import stars from 'shared/assets/icons/stars.svg';
@@ -9,9 +9,9 @@ import graph from 'shared/assets/icons/graph.png';
 import {Icon} from "shared/ui/Icon";
 import {AppImage} from "shared/ui/AppImage";
 
-export const MainPageHero = memo(() => {
+export const HeroSection = memo(() => {
   return (
-    <section className={cls.MainPageHero}>
+    <section className={cls.HeroSection}>
       <div className={cls.container}>
         <article className={cls.heroHeader}>
           <div className={cls.subtitle}>
