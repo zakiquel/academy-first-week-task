@@ -1,8 +1,8 @@
-.RestaurantsSection {
+.DishesSection {
 
 }
 
-.restaurantsContainer {
+.dishesContainer {
   padding: 100px 15px 120px 15px;
   border-bottom: 1px solid var(--light);
   max-width: 1280px;
@@ -10,24 +10,22 @@
 }
 
 .title {
-  margin: 0 0 85px;
+  margin: 0 0 75px;
   font-weight: 600;
   font-size: 45px;
   text-align: center;
   color: var(--black-purple);
 
   span {
-    color: var(--purple);
+    color: var(--purple)
   }
 }
 
 .inner {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 40px 30px;
   margin-bottom: 65px;
-  list-style: none;
-  padding: 0;
 }
 
 .viewAll {

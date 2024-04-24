@@ -1,6 +1,6 @@
 import {memo} from 'react';
 import cls from './RestaurantsSection.module.scss';
-import {Restaurant, RestaurantCard, RestaurantType} from "entities/RestaurantCard";
+import {Restaurant, RestaurantCard, ProductType} from "entities/RestaurantCard";
 import {Button, ButtonTheme} from "shared/ui/Button";
 import {Icon} from "shared/ui/Icon";
 import arrow from 'shared/assets/icons/arrow-right.svg'
@@ -9,7 +9,7 @@ const rest1: Restaurant = {
   id: '1',
   title: 'The Chicken King',
   image: 'https://live.verstaem.online/eatly/src/img/restaurants/1.jpg',
-  type: RestaurantType.TRENDING,
+  type: ProductType.TRENDING,
   time: 24,
   rating: 4.8,
 }
@@ -18,7 +18,7 @@ const rest2: Restaurant = {
   id: '2',
   title: 'The Burger King',
   image: 'https://live.verstaem.online/eatly/src/img/restaurants/2.jpg',
-  type: RestaurantType.HEALTHY,
+  type: ProductType.HEALTHY,
   time: 24,
   rating: 4.9,
 }

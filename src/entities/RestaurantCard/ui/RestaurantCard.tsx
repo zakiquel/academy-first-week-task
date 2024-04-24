@@ -17,10 +17,8 @@ export const RestaurantCard = memo((props: RestaurantCardProps) => {
     restaurant,
   } = props;
 
-  const type = restaurant.type;
-
- const mods:Mods = {
-   [cls[type]]: true
+ const mods: Mods = {
+   [cls[restaurant.type]]: true
  }
 
   return (

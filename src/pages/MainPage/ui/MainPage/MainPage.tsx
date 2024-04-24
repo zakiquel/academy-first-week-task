@@ -4,6 +4,7 @@ import {HeroSection} from "../HeroSection/HeroSection";
 import {FeaturesSection} from "../FeaturesSection/FeaturesSection";
 import {MobileSection} from "../MobileSection/MobileSection";
 import {RestaurantsSection} from "../RestaurantsSection/RestaurantsSection";
+import {DishesSection} from "../DishesSection/DishesSection";
 
 export const MainPage = () => {
   return (
@@ -12,6 +13,7 @@ export const MainPage = () => {
       <FeaturesSection />
       <MobileSection />
       <RestaurantsSection />
+      <DishesSection />
     </main>
   );
 };
