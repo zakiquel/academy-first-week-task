@@ -3,6 +3,7 @@ import cls from './MainPage.module.scss'
 import {HeroSection} from "../HeroSection/HeroSection";
 import {FeaturesSection} from "../FeaturesSection/FeaturesSection";
 import {MobileSection} from "../MobileSection/MobileSection";
+import {RestaurantsSection} from "../RestaurantsSection/RestaurantsSection";
 
 export const MainPage = () => {
   return (
@@ -10,6 +11,7 @@ export const MainPage = () => {
       <HeroSection />
       <FeaturesSection />
       <MobileSection />
+      <RestaurantsSection />
     </main>
   );
 };

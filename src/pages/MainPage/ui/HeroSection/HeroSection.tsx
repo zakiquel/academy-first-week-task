@@ -29,6 +29,7 @@ export const HeroSection = memo(() => {
           </p>
           <div className={cls.btns}>
             <Button
+              className={cls.btn}
               theme={ButtonTheme.PURPLE}
             >
               Get Started

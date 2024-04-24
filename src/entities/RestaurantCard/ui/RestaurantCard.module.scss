@@ -1,0 +1,111 @@
+.RestaurantCard {
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: var(--white);
+  border: 1px solid var(--light);
+  box-shadow: 6px 71px 36px var(--light);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.RestaurantImage {
+  position: relative;
+}
+
+.RestaurantImage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: var(--image-overlay);
+}
+
+.Image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: top;
+}
+
+.RestaurantType {
+  font-size: 13px;
+  margin-bottom: 7px;
+  max-width: fit-content;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
+.Healthy {
+  color: var(--green);
+  background-color: var(--green-overlay);
+}
+
+.Trending {
+  color: var(--orange);
+  background-color: var(--orange-overlay);
+}
+
+.Supreme {
+  color: var(--red);
+  background-color: var(--red-overlay);
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 30px;
+  margin-bottom: 65px;
+}
+
+.RestaurantInfo {
+  padding: 10px 10px 17px 35px;
+}
+
+.RestaurantName {
+  font-weight: 600;
+  font-size: 26px;
+  color: var(--black-purple);
+  margin: 0 0 5px;
+}
+
+.RestaurantBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.RestaurantRating {
+  flex: 1 1 auto;
+  position: relative;
+}
+
+.RestaurantRating::before {
+  width: 26px;
+  height: 26px;
+  content: "";
+  position: absolute;
+  top: 20%;
+  right: 100%;
+  background: url(https://live.verstaem.online/eatly/src/img/decor/star.svg) top center no-repeat;
+}
+
+.RestaurantTime,
+.RestaurantRating {
+  font-size: 20px;
+  color: var(--grey);
+  font-weight: 300;
+}
+
+.RestaurantButton {
+  background-color: var(--features-text);
+  padding: 6px 10px 3px;
+  border-radius: 100%;
+}

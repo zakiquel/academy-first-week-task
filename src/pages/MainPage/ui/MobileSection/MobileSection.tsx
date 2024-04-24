@@ -47,6 +47,8 @@ export const MobileSection = memo(() => {
             >
               Download
               <Icon
+                inverted
+                className={cls.Arrow}
                 Svg={arrow}
               />
             </Link>

@@ -68,8 +68,17 @@
   margin-bottom: 40px;
 }
 
+.btn,
 .btnGo {
   font-weight: 600;
+}
+
+.btn:hover {
+  background-color: var(--white);
+  color: var(--purple);
+}
+
+.btnGo {
   color: var(--purple)
 }
 

@@ -3,7 +3,7 @@ import cls from './FeaturesSection.module.scss';
 
 export const FeaturesSection = memo(() => {
   return (
-    <section className={cls.FeaturesSection}>
+    <div className={cls.FeaturesSection}>
       <div className={cls.container}>
         <ul className={cls.featuresList}>
           <li className={cls.featuresItem}>
@@ -32,9 +32,8 @@ export const FeaturesSection = memo(() => {
           </li>
         </ul>
         <div className={cls.decor}>
-
         </div>
       </div>
-    </section>
+    </div>
   );
 });

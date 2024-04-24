@@ -65,7 +65,6 @@
   position: relative;
   padding: 20px 25px;
   color: var(--white);
-  transition: color 0.3s;
 
   a {
     display: flex;
@@ -74,6 +73,17 @@
 
   a:visited {
     color: var(--white);
+  }
+}
+
+.mobileButton:hover {
+  background-color: var(--white);
+  a {
+    color: var(--purple);
+  }
+
+  .Arrow {
+    color: var(--purple);
   }
 }
 
