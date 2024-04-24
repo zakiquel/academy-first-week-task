@@ -1,2 +1,2 @@
-export { DishCard } from '../DishCard/ui/DishCard'
-export type { Dish } from '../DishCard/model/types/dish'
+export { DishCard } from './ui/DishCard'
+export type { Dish } from './model/types/dish'

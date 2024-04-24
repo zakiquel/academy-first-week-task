@@ -1,0 +1,28 @@
+.PurchaseSection {
+
+}
+
+.purchaseContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  column-gap: 10px;
+  padding-bottom: 120px;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.purchaseHeader {
+  flex: 0 1 50%;
+}
+
+.title {
+  text-align: left;
+  margin: 0 0 50px;
+  font-weight: 600;
+  font-size: 45px;
+  color: var(--black-purple);
+
+  span {
+    color: var(--purple);
+  }
+}
