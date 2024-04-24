@@ -1,6 +1,6 @@
 .DishCard {
   background-color: var(--white);
-  border: 1px solid var(--footer-bg);
+  border: 1px solid var(--border);
   box-shadow: 7px 82px 41px var(--box-shadow);
   border-radius: 35px;
   overflow: hidden;
@@ -34,7 +34,6 @@
 .DishName {
   font-weight: 600;
   font-size: 23px;
-  color: var(--black-purple);
   margin: 0 0 3px;
 }
 
@@ -76,7 +75,6 @@
 .DishCost {
   font-weight: 700;
   font-size: 26px;
-  color: var(--black-purple);
 
   &span {
     color: var(--light-grey);

@@ -42,16 +42,12 @@ export const MobileSection = memo(() => {
             className={cls.mobileButton}
             theme={ButtonTheme.PURPLE}
           >
-            <Link
-              to={getRouteMain()}
-            >
-              Download
-              <Icon
-                inverted
-                className={cls.Arrow}
-                Svg={arrow}
-              />
-            </Link>
+            <span>Download</span>
+            <Icon
+              inverted
+              className={cls.Arrow}
+              Svg={arrow}
+            />
           </Button>
         </div>
       </article>

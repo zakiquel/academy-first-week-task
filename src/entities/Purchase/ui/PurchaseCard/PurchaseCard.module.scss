@@ -1,5 +1,6 @@
 .Purchase {
   box-shadow: 0 20px 30px var(--box-shadow);
+  border: 1px solid var(--border);
   margin-bottom: 10px;
   background: var(--white);
   border-radius: 16px;
@@ -25,14 +26,12 @@
 .purchaseName {
   font-weight: 600;
   font-size: 16px;
-  color: var(--black-purple);
   margin: 0 0 5px;
 }
 
 .purchaseStatus {
   font-weight: 500;
   font-size: 10px;
-  color: var(--black-purple);
   margin: 0 0 5px;
 }
 

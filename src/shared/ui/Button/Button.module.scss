@@ -2,12 +2,18 @@
   cursor: pointer;
   color: var(--black);
   padding: 6px 15px;
+  transition: transform 0.1s ease-out;
 
   &:hover {
     transition: background-color 0.3s ease;
     opacity: 0.8;
     fill-opacity: 0.8;
     stroke-opacity: 0.8;
+  }
+
+  &:focus {
+    outline: 2px solid var(--purple);
+    transform: scale(1.05);
   }
 }
 
@@ -17,6 +23,10 @@
   background: none;
   outline: none;
   color: var(--grey);
+
+  &:focus {
+    border-radius: 5px;
+  }
 }
 
 .outline {
@@ -32,6 +42,10 @@
   border: 1px solid var(--purple);
   padding: 18px 27px;
   border-radius: 15px;
+
+  &:focus {
+    border-radius: 15px;
+  }
 }
 
 .square {

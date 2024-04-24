@@ -2,7 +2,7 @@
   border-radius: 30px;
   overflow: hidden;
   background-color: var(--white);
-  border: 1px solid var(--light);
+  border: 1px solid var(--border);
   box-shadow: 6px 71px 36px var(--light);
   transition: transform 0.3s ease;
   cursor: pointer;
@@ -71,7 +71,6 @@
 .RestaurantName {
   font-weight: 600;
   font-size: 26px;
-  color: var(--black-purple);
   margin: 0 0 5px;
 }
 

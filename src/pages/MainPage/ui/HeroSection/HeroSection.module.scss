@@ -1,6 +1,7 @@
 .HeroSection {
   padding: 220px 0 120px;
 }
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -137,6 +138,7 @@
 
 .heroMealInner {
   background: var(--white);
+  border: 1px solid var(--border);
   border-radius: 16px;
   box-shadow: 0 15px 20px var(--grey);
   padding: 5px 15px;

@@ -1,7 +1,6 @@
 import { memo } from 'react';
 import cls from './PurchaseSection.module.scss';
-import {Select} from "shared/ui/Select";
-import {purchase1, purchase2, purchase3,PurchaseList} from "entities/Purchase";
+import {purchase1, purchase2, purchase3, PurchaseGraph, PurchaseList} from "entities/Purchase";
 
 export const PurchaseSection = memo(() => {
   return (
@@ -17,16 +16,7 @@ export const PurchaseSection = memo(() => {
             purchases={[purchase1, purchase2, purchase3]}
           />
         </div>
-        <div className={cls.purchaseGraph}>
-          <div className={cls.graphHeader}>
-            <h3 className={cls.graphtitle}></h3>
-            <Select />
-          </div>
-          <ul className={cls.graphInfo}>
-            <li className={cls.graphItem}></li>
-            <li className={cls.graphItem}></li>
-          </ul>
-        </div>
+        <PurchaseGraph />
       </div>
     </section>
   );
