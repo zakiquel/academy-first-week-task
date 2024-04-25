@@ -2,10 +2,8 @@ import {memo} from 'react';
 import cls from './MobileSection.module.scss';
 import {AppImage} from "shared/ui/AppImage";
 import mobile from 'shared/assets/icons/phone.png';
-import {Link} from "react-router-dom";
 import {Icon} from "shared/ui/Icon";
 import arrow from 'shared/assets/icons/arrow-right.svg';
-import {getRouteMain} from "shared/const/router";
 import {Button, ButtonTheme} from "shared/ui/Button";
 
 export const MobileSection = memo(() => {

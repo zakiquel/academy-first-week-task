@@ -26,7 +26,7 @@ export const PurchaseItem = memo(({stat, className}: PurchaseItemProps) => {
         </div>
       </div>
       <div className={cls.cost}>
-        {stat.cost}
+        {`$${stat.cost}`}
       </div>
     </li>
   );
