@@ -5,10 +5,13 @@
   min-height: 100vh;
   font: var(--font-m);
   color: var(--black-purple);
+  position: relative;
 }
 
 .content-page {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 ::-webkit-scrollbar { display: none; }

@@ -16,6 +16,8 @@ const dish: Dish = {
   image: 'https://live.verstaem.online/eatly/src/img/food/1.png',
 }
 
+const dishes: Dish[] = [dish, dish, dish, dish, dish];
+
 export const DishesSection = memo(() => {
   return (
     <section className={cls.DishesSection}>
@@ -25,21 +27,12 @@ export const DishesSection = memo(() => {
           <span> Dishes</span>
         </h2>
         <ul className={cls.inner}>
-          <DishCard
-            dish={dish}
-          />
-          <DishCard
-            dish={dish}
-          />
-          <DishCard
-            dish={dish}
-          />
-          <DishCard
-            dish={dish}
-          />
-          <DishCard
-            dish={dish}
-          />
+          {dishes.map((dish) => (
+            <DishCard
+              dish={dish}
+              key={Math.random()}
+            />
+          ))}
         </ul>
         <div className={cls.viewAll}>
           <Button

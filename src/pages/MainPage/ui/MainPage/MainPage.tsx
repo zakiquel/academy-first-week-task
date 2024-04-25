@@ -7,6 +7,8 @@ import {RestaurantsSection} from "../RestaurantsSection/RestaurantsSection";
 import {DishesSection} from "../DishesSection/DishesSection";
 import {PurchaseSection} from "../PurchaseSection/PurchaseSection";
 import {ReviewSection} from "../ReviewSection/ui/ReviewSection/ReviewSection";
+import {SaleBlock} from "../SaleBlock/SaleBlock";
+import {Footer} from "widgets/Footer";
 
 export const MainPage = () => {
   return (
@@ -18,6 +20,8 @@ export const MainPage = () => {
       <DishesSection />
       <PurchaseSection />
       <ReviewSection />
+      <SaleBlock />
+      <Footer />
     </main>
   );
 };

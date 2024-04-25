@@ -2,6 +2,7 @@ import { memo } from 'react';
 import cls from './ReviewSection.module.scss';
 import {Review} from "../../model/types/review";
 import {ReviewCard} from "pages/MainPage/ui/ReviewSection/ui/ReviewCard/ReviewCard";
+import {classNames} from "shared/lib/classNames/classNames";
 
 const review: Review = {
   id: '1',
@@ -25,11 +26,11 @@ export const ReviewSection = memo(() => {
         <ul className={cls.reviewInner}>
           <div className={cls.slides}>
             <div className={cls.track}>
-              <input type="radio" name="r" id="r1"></input>
+              <input type="radio" name="r" id="r1" defaultChecked></input>
               <input type="radio" name="r" id="r2"></input>
-              <input type="radio" name="r" id="r3" defaultChecked></input>
+              <input type="radio" name="r" id="r3"></input>
               <ReviewCard
-                className='s1'
+                className={cls.s1}
                 review={review}
               />
               <ReviewCard
@@ -41,12 +42,15 @@ export const ReviewSection = memo(() => {
             </div>
           </div>
           <ul className={cls.navigation}>
-            <label htmlFor="r1" className={cls.bar}>
-            </label>
-            <label htmlFor="r2" className={cls.bar}>
-            </label>
-            <label htmlFor="r3" className={cls.bar}>
-            </label>
+            <button className={classNames(cls.bar, {}, [cls.active])}>
+              <label htmlFor="r1" />
+            </button>
+            <button className={cls.bar}>
+              <label htmlFor="r2" />
+            </button>
+            <button className={cls.bar}>
+              <label htmlFor="r3" />
+            </button>
           </ul>
         </ul>
       </div>

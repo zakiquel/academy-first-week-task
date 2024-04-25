@@ -46,17 +46,16 @@
   width: 180px;
   height: 11px;
   border-radius: 50px;
-  margin-right: -3px;
+  margin-right: -1px;
   background-color: var(--features-text);
   padding: 0;
   border: none;
   cursor: pointer;
   transition: all 0.4s ease;
+}
 
-  &:hover,
-  &:focus {
-    background-color: var(--purple);
-  }
+.active {
+  background-color: var(--purple);
 }
 
 input[name="r"] {
@@ -64,14 +63,14 @@ input[name="r"] {
   visibility: hidden;
 }
 
-#r1:checked {
-  background-color: var(yellow);
+#r1:checked ~ .s1 {
+  margin-left: 0;
 }
 
-#r2:checked {
-  background-color: var(--purple);
+#r2:checked ~ .s1 {
+  margin-left: -50%;
 }
 
-#r3:checked {
-  background-color: var(green);
+#r3:checked ~ .s1 {
+  margin-left: 100%;
 }

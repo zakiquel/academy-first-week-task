@@ -23,6 +23,17 @@ const rest2: Restaurant = {
   rating: 4.9,
 }
 
+const rest3: Restaurant = {
+  id: '3',
+  title: 'The Chicken King',
+  image: 'https://live.verstaem.online/eatly/src/img/restaurants/1.jpg',
+  type: ProductType.TRENDING,
+  time: 24,
+  rating: 4.8,
+}
+
+const restaurants = [rest1, rest2, rest3];
+
 export const RestaurantsSection = memo(() => {
   return (
     <section className={cls.RestaurantsSection}>
@@ -32,15 +43,12 @@ export const RestaurantsSection = memo(() => {
           <span> Restaurants</span>
         </h1>
         <ul className={cls.inner}>
-          <RestaurantCard
-            restaurant={rest1}
-          />
-          <RestaurantCard
-            restaurant={rest2}
-          />
-          <RestaurantCard
-            restaurant={rest1}
-          />
+          {restaurants.map((rest) => (
+            <RestaurantCard
+              restaurant={rest}
+              key={rest.id}
+            />
+          ))}
         </ul>
         <div className={cls.viewAll}>
           <Button
