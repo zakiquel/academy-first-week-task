@@ -77,3 +77,15 @@
   font-weight: 800;
   font-size: 22px;
 }
+
+@media screen and (max-width: 500px) {
+  .cost {
+    margin-top: 10px;
+  }
+
+  .purple,
+  .orange {
+    flex-direction: column;
+    justify-content: left;
+  }
+}

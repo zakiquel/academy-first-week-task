@@ -1,5 +1,4 @@
 import React, { Suspense } from 'react';
-import './styles/index.scss'
 import { AppRouter } from './providers/router'
 import { Navbar } from "widgets/Navbar";
 

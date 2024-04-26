@@ -14,11 +14,9 @@ export const HeroSection = memo(() => {
     <section className={cls.HeroSection}>
       <div className={cls.container}>
         <article className={cls.heroHeader}>
-          <div className={cls.subtitle}>
-            <span>
-              Over 1000 Users
-            </span>
-          </div>
+          <p className={cls.subtitle}>
+            Over 1000 Users
+          </p>
           <h1 className={cls.title}>
             Enjoy Foods All Over The
             <span> World</span>
@@ -77,6 +75,7 @@ export const HeroSection = memo(() => {
           <div className={cls.heroGraph}>
             <div className={cls.heroGraphInner}>
               <AppImage
+                className={cls.graphImg}
                 src={graph}
                 alt="Graph Image"
               />

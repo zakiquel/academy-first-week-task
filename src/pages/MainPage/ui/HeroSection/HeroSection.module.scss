@@ -1,5 +1,5 @@
 .HeroSection {
-  padding: 220px 0 120px;
+  padding: 120px 0;
 }
 
 .container {
@@ -188,11 +188,12 @@
 }
 
 .heroGraphInner {
-    background-color: #ffffff;
+    background-color: var(--white);
     box-shadow: 14px 18px 35px var(--grey);
     border: 1px solid #edf2f7;
     border-radius: 14px;
     padding: 5px 0;
+    overflow: hidden;
 }
 
 .heroGraphInner::before {
@@ -203,6 +204,50 @@
   width: 38px;
   height: 33px;
   z-index: 2;
-  background: url(shared/assets/icons/lines.svg) top center no-repeat;
+  background: url(https://live.verstaem.online/eatly/src/img/decor/pattern-2.svg) top center no-repeat;
   background-size: cover;
+}
+
+.graphImg {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+@media screen and (max-width: 1000px) {
+  .title {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .HeroSection {
+    padding-top: 15px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .heroHeader {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  .subtitle {
+    display: inline-block;
+  }
+
+  .heroPreview {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .btns {
+    flex-direction: column;
+  }
+
+  .rating {
+    flex-direction: column;
+  }
 }

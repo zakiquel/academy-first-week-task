@@ -24,3 +24,22 @@
     color: var(--purple);
   }
 }
+
+@media screen and (max-width: 1050px) {
+  .purchaseContainer {
+    display: block;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .title {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+
+}
+

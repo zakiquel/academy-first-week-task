@@ -1,0 +1,36 @@
+.AuthForm {
+  flex: 0 1 50%;
+  padding: 32px 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.modalLogo {
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+
+  span {
+    font-weight: 600;
+    font-size: 21px;
+    color: var(--purple);
+    margin-left: 5px;
+  }
+}
+
+.bottomLink {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--link);
+}
+

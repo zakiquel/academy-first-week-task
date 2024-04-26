@@ -1,17 +1,24 @@
 @import "reset";
 @import "variables/global";
 
-.app {
-  min-height: 100vh;
+.body {
   font: var(--font-m);
   color: var(--black-purple);
+}
+
+.app,
+.app_modal {
+  font: var(--font-m);
+  color: var(--black-purple);
+}
+
+.app {
+  min-height: 100vh;
   position: relative;
 }
 
 .content-page {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 ::-webkit-scrollbar { display: none; }

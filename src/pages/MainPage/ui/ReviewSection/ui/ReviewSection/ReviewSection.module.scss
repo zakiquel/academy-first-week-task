@@ -74,3 +74,22 @@ input[name="r"] {
 #r3:checked ~ .s1 {
   margin-left: 100%;
 }
+
+@media screen and (max-width: 760px) {
+  .reviewTitle {
+    font-size: 35px;
+  }
+
+  .bar {
+    width: 90px;
+    height: 9px;
+  }
+
+  .navigation {
+    max-width: 300px;
+    flex-wrap: nowrap;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+

@@ -1,17 +1,15 @@
-.InputWrapper {
-  display: flex;
-}
-
 .input {
-  background: transparent;
+  background: var(--input-bg);
   border: none;
+  border-radius: 5px;
   outline: none;
   width: 100%;
-  color: transparent;
-  text-shadow: 0 0 0 var(--grey);
+  padding: 25px;
+  letter-spacing: 0.07em;
+  caret-color: var(--purple);
 
   &:focus {
-    outline: none;
+    outline: 2px solid var(--purple);
   }
 }
 
@@ -19,35 +17,7 @@
   margin-right: 5px;
 }
 
-.caretWrapper {
-  flex-grow: 1;
-  position: relative;
-}
-
-.caret {
-  height: 3px;
-  width: 9px;
-  background: var(--black);
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  animation: blink 0.7s forwards infinite;
-}
-
 .readonly {
   opacity: 0.8;
 }
 
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 0.01;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}

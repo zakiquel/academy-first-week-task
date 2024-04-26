@@ -27,3 +27,36 @@
   border-radius: 13px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1050px) {
+  .PurchaseGraph {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .PurchaseGraph {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .select {
+    padding: 10px 12px;
+
+    select {
+      padding: 0;
+    }
+  }
+}

@@ -41,3 +41,19 @@
   font-size: 14px;
   color: var(--features-text);
 }
+
+@media screen and (max-width: 760px) {
+  .featuresList {
+    flex-direction: column;
+  }
+
+  .featuresItem {
+    padding: 20px 0;
+    border-right: none;
+    border-bottom: 1px solid var(--light);
+  }
+}
+
+@media screen and (max-width: 390px) {
+
+}
