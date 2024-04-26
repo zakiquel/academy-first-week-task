@@ -82,21 +82,48 @@
 @media screen and (max-width: 820px) {
   .inner::after {
     width: 0;
-    height: 200px;
   }
 }
 
 @media screen and (max-width: 650px) {
+  .SaleBlock {
+    margin-bottom: 50px;
+  }
+
+  .inner {
+    padding: 20px 30px;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
   .form {
     display: block;
   }
 
   .saleInput {
     width: 100%;
+    margin-bottom: 25px;
   }
 
-  .saleBtn {
+  .sale {
     position: static;
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    padding: 0;
+  }
+
+  .SaleBlock {
+    width: 100%;
+  }
+
+  .inner {
+    padding: 15px;
   }
 }
 

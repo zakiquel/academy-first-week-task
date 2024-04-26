@@ -59,9 +59,13 @@
   }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 550px) {
+  .dishesContainer {
+    padding: 80px 0;
+  }
+
   .title {
-    line-height: 1.15;
+    line-height: 1.2;
     font-size: 35px;
     text-align: center;
   }

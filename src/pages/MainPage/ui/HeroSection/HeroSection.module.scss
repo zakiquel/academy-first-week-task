@@ -231,6 +231,7 @@
   .heroHeader {
     text-align: center;
     margin-bottom: 100px;
+    align-items: center;
   }
 
   .subtitle {
@@ -239,6 +240,14 @@
 
   .heroPreview {
     max-width: 100%;
+  }
+
+  .btns {
+    justify-content: center;
+  }
+
+  .rating {
+    justify-content: center;
   }
 }
 

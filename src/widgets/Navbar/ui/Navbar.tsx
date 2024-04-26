@@ -5,7 +5,6 @@ import {Icon} from "shared/ui/Icon";
 import cls from './Navbar.module.scss';
 import logo from "shared/assets/icons/app-logo.svg";
 import {Button, ButtonTheme} from "shared/ui/Button";
-import {Modal} from "shared/ui/Modal";
 import {AuthModal} from "features/Authorization/ui/AuthModal/AuthModal";
 import {FormType} from "features/Authorization/model/types/forms";
 

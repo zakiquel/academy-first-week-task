@@ -63,10 +63,6 @@
   }
 }
 
-.headerForm {
-
-}
-
 .loginButton {
   margin-right: 35px;
   color: var(--grey);
@@ -87,6 +83,39 @@
   color: var(--purple);
 }
 
-.headerBurger {
+.burgerBtn {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.burger-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 30px;
+  background-color: var(--black);
+  height: 2px;
+}
+
+.burger-btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 30px;
+  background-color: var(--black);
+  height: 2px;
+}
+
+@media screen and (max-width: 760px) {
+
+}
+
+@media screen and (max-width: 760px) {
+
+}
+
+@media screen and (max-width: 390px) {
 
 }
