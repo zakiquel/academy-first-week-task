@@ -1,7 +1,8 @@
 import { type HTMLAttributes, memo, type ReactNode } from 'react'
 
+import { classNames, type Mods } from '@/shared/lib/classNames/classNames'
+
 import cls from './Card.module.scss'
-import { classNames, type Mods } from 'shared/lib/classNames/classNames'
 
 export enum CardTheme {
   NORMAL = 'normal',

@@ -1,16 +1,18 @@
 import { memo } from 'react';
+
+import { Stat } from '../../model/types/stat';
+
+import { classNames } from "@/shared/lib/classNames/classNames";
+import { Icon } from "@/shared/ui/Icon";
+
 import cls from './PurchaseItem.module.scss';
-import {Icon} from "shared/ui/Icon";
-import {Stat} from "entities/Purchase/model/types/stat";
-import {classNames} from "shared/lib/classNames/classNames";
 
 export interface PurchaseItemProps {
   className?: string;
   stat: Stat;
 }
 
-export const PurchaseItem = memo(({stat, className}: PurchaseItemProps) => {
-  return (
+export const PurchaseItem = memo(({ stat, className }: PurchaseItemProps) => (
     <li className={classNames(cls[className])}>
       <div className={cls.itemInner}>
         <Icon
@@ -29,5 +31,4 @@ export const PurchaseItem = memo(({stat, className}: PurchaseItemProps) => {
         {`$${stat.cost}`}
       </div>
     </li>
-  );
-});
+  ));

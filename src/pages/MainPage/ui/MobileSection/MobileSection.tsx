@@ -1,13 +1,14 @@
-import {memo} from 'react';
-import cls from './MobileSection.module.scss';
-import {AppImage} from "shared/ui/AppImage";
-import mobile from 'shared/assets/icons/phone.png';
-import {Icon} from "shared/ui/Icon";
-import arrow from 'shared/assets/icons/arrow-right.svg';
-import {Button, ButtonTheme} from "shared/ui/Button";
+import { memo } from 'react';
 
-export const MobileSection = memo(() => {
-  return (
+import arrow from '@/shared/assets/icons/arrow-right.svg';
+import mobile from '@/shared/assets/icons/phone.png';
+import { AppImage } from "@/shared/ui/AppImage";
+import { Button, ButtonTheme } from "@/shared/ui/Button";
+import { Icon } from "@/shared/ui/Icon";
+
+import cls from './MobileSection.module.scss';
+
+export const MobileSection = memo(() => (
     <section className={cls.MobileSection}>
       <article className={cls.mobileContainer}>
         <div className={cls.mobileImg}>
@@ -50,5 +51,4 @@ export const MobileSection = memo(() => {
         </div>
       </article>
     </section>
-  );
-});
+  ));

@@ -1,8 +1,11 @@
 import { memo } from 'react';
+
+import { Review } from "../../model/types/review";
+import { ReviewCard } from '../ReviewCard/ReviewCard';
+
+import { classNames } from "@/shared/lib/classNames/classNames";
+
 import cls from './ReviewSection.module.scss';
-import {Review} from "../../model/types/review";
-import {ReviewCard} from "pages/MainPage/ui/ReviewSection/ui/ReviewCard/ReviewCard";
-import {classNames} from "shared/lib/classNames/classNames";
 
 const review: Review = {
   id: '1',
@@ -15,8 +18,7 @@ const review: Review = {
   rating: 4
 }
 
-export const ReviewSection = memo(() => {
-  return (
+export const ReviewSection = memo(() => (
     <section>
       <div className={cls.reviewContainer}>
         <h2 className={cls.reviewTitle}>
@@ -26,9 +28,9 @@ export const ReviewSection = memo(() => {
         <ul className={cls.reviewInner}>
           <div className={cls.slides}>
             <div className={cls.track}>
-              <input type="radio" name="r" id="r1" defaultChecked></input>
-              <input type="radio" name="r" id="r2"></input>
-              <input type="radio" name="r" id="r3"></input>
+              <input type="radio" name="r" id="r1" defaultChecked />
+              <input type="radio" name="r" id="r2" />
+              <input type="radio" name="r" id="r3" />
               <ReviewCard
                 className={cls.s1}
                 review={review}
@@ -42,7 +44,10 @@ export const ReviewSection = memo(() => {
             </div>
           </div>
           <ul className={cls.navigation}>
-            <button className={classNames(cls.bar, {}, [cls.active])}>
+            <button
+              className={classNames(cls.bar, {}, [cls.active])}
+              type="button"
+            >
               <label htmlFor="r1" />
             </button>
             <button className={cls.bar}>
@@ -55,5 +60,4 @@ export const ReviewSection = memo(() => {
         </ul>
       </div>
     </section>
-  );
-});
+  ));

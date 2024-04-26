@@ -1,9 +1,10 @@
-import {memo} from 'react';
-import cls from './SaleBlock.module.scss';
-import {Button, ButtonTheme} from "shared/ui/Button";
+import { memo } from 'react';
 
-export const SaleBlock = memo(() => {
-  return (
+import { Button, ButtonTheme } from "@/shared/ui/Button";
+
+import cls from './SaleBlock.module.scss';
+
+export const SaleBlock = memo(() => (
     <div className={cls.SaleBlock}>
       <div className={cls.container}>
         <div className={cls.inner}>
@@ -27,5 +28,4 @@ export const SaleBlock = memo(() => {
         </div>
       </div>
     </div>
-  );
-});
+  ));

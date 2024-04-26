@@ -1,14 +1,14 @@
 import { memo } from 'react';
+
+import { Purchase, PurchaseCard } from '../..';
+
 import cls from './PurchaseList.module.scss';
-import {Purchase, PurchaseCard} from "entities/Purchase";
 
 interface PurchaseListProps {
-  className?: string;
   purchases: Purchase[];
 }
 
-export const PurchaseList = memo(({purchases}: PurchaseListProps) => {
-  return (
+export const PurchaseList = memo(({ purchases }: PurchaseListProps) => (
     <div className={cls.PurchaseList}>
       {purchases.map((purchase) => (
         <PurchaseCard
@@ -17,5 +17,4 @@ export const PurchaseList = memo(({purchases}: PurchaseListProps) => {
         />
       ))}
     </div>
-  );
-});
+  ));

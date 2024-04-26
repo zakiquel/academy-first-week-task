@@ -1,20 +1,24 @@
 import { memo } from 'react';
+
+import { Review } from "../../model/types/review";
+
+import star from "@/shared/assets/icons/star.svg";
+import { classNames } from "@/shared/lib/classNames/classNames";
+import { AppImage } from "@/shared/ui/AppImage";
+import { Icon } from "@/shared/ui/Icon";
+
+
 import cls from './ReviewCard.module.scss';
-import {AppImage} from "shared/ui/AppImage";
-import {Icon} from "shared/ui/Icon";
-import star from "shared/assets/icons/star.svg";
-import {Review} from "../../model/types/review";
-import {classNames} from "shared/lib/classNames/classNames";
 
 interface ReviewCardProps {
   className?: string;
   review: Review;
 }
 
-export const ReviewCard = memo(({review, className}: ReviewCardProps) => {
+export const ReviewCard = memo(({ review, className }: ReviewCardProps) => {
   const renderStars = () => {
     const stars = [];
-    for (let i = 0; i < review.rating; i++) {
+    for (let i = 0; i < review.rating; i += 1) {
       stars.push(
         <Icon
           className={cls.icon}

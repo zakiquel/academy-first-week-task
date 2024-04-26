@@ -1,15 +1,17 @@
 import { memo } from 'react';
+
+import { Purchase } from '../..';
+
+import { classNames, Mods } from "@/shared/lib/classNames/classNames";
+import { AppImage } from "@/shared/ui/AppImage";
+
 import cls from './PurchaseCard.module.scss';
-import {AppImage} from "shared/ui/AppImage";
-import {Purchase} from "entities/Purchase";
-import {classNames, Mods} from "shared/lib/classNames/classNames";
 
 interface PurchaseProps {
-  className?: string;
   purchase: Purchase;
 }
 
-export const PurchaseCard = memo(({purchase}: PurchaseProps) => {
+export const PurchaseCard = memo(({ purchase }: PurchaseProps) => {
 
   const mods: Mods = {
     [cls[purchase.status]]: true

@@ -4,13 +4,7 @@ module.exports = {
     es2021: true,
     jest: true,
   },
-  extends: [
-    'plugin:react/recommended',
-    'airbnb',
-    'plugin:i18next/recommended',
-    'plugin:storybook/recommended',
-    'prettier',
-  ],
+  extends: ['plugin:react/recommended', 'airbnb', 'prettier'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -22,7 +16,6 @@ module.exports = {
   plugins: [
     'react',
     '@typescript-eslint',
-    'i18next',
     'react-hooks',
     'zavalition-fsd',
     'unused-imports',
@@ -41,42 +34,28 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/jsx-props-no-spreading': 'warn',
     'react/function-component-definition': 'off',
+    'react/button-has-type': 'off',
+    'jsx-a11y/label-has-associated-control': 'off',
     'no-shadow': 'off',
     'import/extensions': 'off',
     'import/no-extraneous-dependencies': 'off',
     'no-underscore-dangle': 'off',
-    'i18next/no-literal-string': [
-      'error',
-      {
-        markupOnly: true,
-        ignoreAttribute: [
-          'data-testid',
-          'to',
-          'target',
-          'justify',
-          'align',
-          'direction',
-          'gap',
-          'role',
-          'as',
-          'border',
-        ],
-      },
-    ],
     'max-len': ['error', { ignoreComments: true, code: 130 }],
     'jsx-a11y/no-static-element-interactions': 'off',
     'jsx-a11y/click-events-have-key-events': 'off',
     'react-hooks/rules-of-hooks': 'error',
+    'object-curly-spacing': ['error', 'always'],
     'react-hooks/exhaustive-deps': 'error',
     'no-param-reassign': 'off',
+    'jsx-a11y/anchor-is-valid': 'off',
+    'jsx-a11y/control-has-associated-label': 'off',
     'no-undef': 'off',
     'react/no-array-index-key': 'off',
-    'zavalition-fsd/path-checker': ['error', { alias: '@' }],
+    'zavalition-fsd/path-checker': ['error', {alias: '@'}],
     'zavalition-fsd/layer-imports': [
       'error',
       {
         alias: '@',
-        ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
       },
     ],
     'zavalition-fsd/public-api-imports': [
@@ -112,7 +91,5 @@ module.exports = {
   },
   globals: {
     __IS_DEV__: true,
-    __API__: true,
-    __PROJECT__: true,
   },
 };

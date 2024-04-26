@@ -1,12 +1,15 @@
-import {memo} from 'react';
+import { memo } from 'react';
+
+import { Dish } from "../model/types/dish";
+
+import fav from '@/shared/assets/icons/fav.svg';
+import plus from '@/shared/assets/icons/plus.svg';
+import { classNames, Mods } from "@/shared/lib/classNames/classNames";
+import { AppImage } from "@/shared/ui/AppImage";
+import { Button, ButtonTheme } from "@/shared/ui/Button";
+import { Icon } from "@/shared/ui/Icon";
+
 import cls from './DishCard.module.scss';
-import {Dish} from "../model/types/dish";
-import {Button, ButtonTheme} from "shared/ui/Button";
-import {AppImage} from "shared/ui/AppImage";
-import {Icon} from "shared/ui/Icon";
-import plus from 'shared/assets/icons/plus.svg';
-import fav from 'shared/assets/icons/fav.svg';
-import {classNames, Mods} from "shared/lib/classNames/classNames";
 
 interface DishCardProps {
   dish: Dish;

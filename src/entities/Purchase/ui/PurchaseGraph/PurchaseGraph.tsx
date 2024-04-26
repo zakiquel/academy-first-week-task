@@ -1,8 +1,11 @@
-import {memo, useMemo, useState} from 'react';
-import {PurchaseItem, Stat} from "entities/Purchase";
-import {Select, SelectOption} from "shared/ui/Select";
-import logo1 from "shared/assets/icons/expenses.svg";
-import logo2 from "shared/assets/icons/vocherIcon.svg";
+import { memo, useMemo, useState } from 'react';
+
+import { PurchaseItem, Stat } from '../..';
+
+import logo1 from "@/shared/assets/icons/expenses.svg";
+import logo2 from "@/shared/assets/icons/vocherIcon.svg";
+import { Select, SelectOption } from "@/shared/ui/Select";
+
 import cls from './PurchaseGraph.module.scss';
 
 

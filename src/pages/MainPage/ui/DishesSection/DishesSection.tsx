@@ -1,10 +1,12 @@
 import { memo } from 'react';
+
+import { Dish, DishCard } from "@/entities/DishCard";
+import { ProductType } from "@/entities/RestaurantCard";
+import arrow from "@/shared/assets/icons/arrow-right.svg";
+import { Button, ButtonTheme } from "@/shared/ui/Button";
+import { Icon } from "@/shared/ui/Icon";
+
 import cls from './DishesSection.module.scss';
-import {Button, ButtonTheme} from "shared/ui/Button";
-import {Icon} from "shared/ui/Icon";
-import arrow from "shared/assets/icons/arrow-right.svg";
-import {Dish, DishCard} from "entities/DishCard";
-import {ProductType} from "entities/RestaurantCard";
 
 const dish: Dish = {
   id: '1',
@@ -18,8 +20,7 @@ const dish: Dish = {
 
 const dishes: Dish[] = [dish, dish, dish, dish, dish];
 
-export const DishesSection = memo(() => {
-  return (
+export const DishesSection = memo(() => (
     <section className={cls.DishesSection}>
       <div className={cls.dishesContainer}>
         <h2 className={cls.title}>
@@ -47,5 +48,4 @@ export const DishesSection = memo(() => {
         </div>
       </div>
     </section>
-  );
-});
+  ));

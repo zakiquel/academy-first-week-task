@@ -1,20 +1,21 @@
 import { memo } from 'react';
+import { Link } from "react-router-dom";
+
+import eatly from "@/shared/assets/icons/app-logo.svg";
+import facebook from "@/shared/assets/icons/facebook.svg";
+import ins from "@/shared/assets/icons/in.svg";
+import inst from "@/shared/assets/icons/inst.svg";
+import twitter from "@/shared/assets/icons/twitter.svg";
+import { getRouteMain } from "@/shared/const/router";
+import { Icon } from "@/shared/ui/Icon";
+
 import cls from './Footer.module.scss';
-import inst from "shared/assets/icons/inst.svg";
-import ins from "shared/assets/icons/in.svg";
-import facebook from "shared/assets/icons/facebook.svg";
-import twitter from "shared/assets/icons/twitter.svg";
-import {Link} from "react-router-dom";
-import {getRouteMain} from "shared/const/router";
-import {Icon} from "shared/ui/Icon";
-import eatly from "shared/assets/icons/app-logo.svg";
 
 const navItems = ['Blog', 'Pricing', 'About Us', 'Contacts'];
 const socialItems = [inst, ins, facebook, twitter];
 
 
-export const Footer = memo(() => {
-  return (
+export const Footer = memo(() => (
     <footer className={cls.Footer}>
       <div className={cls.container}>
         <div className={cls.header}>
@@ -66,5 +67,4 @@ export const Footer = memo(() => {
         </div>
       </div>
     </footer>
-  );
-});
+  ));

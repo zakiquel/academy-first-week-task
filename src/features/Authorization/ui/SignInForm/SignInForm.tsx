@@ -1,18 +1,20 @@
-import {memo, useState} from 'react';
+import { memo, useState } from 'react';
+import { Link } from "react-router-dom";
+
+import apple from "@/shared/assets/icons/apple.svg";
+import google from "@/shared/assets/icons/google.svg";
+import { getRouteMain } from "@/shared/const/router";
+import { Button, ButtonTheme } from "@/shared/ui/Button";
+import { Icon } from "@/shared/ui/Icon";
+import { Input } from "@/shared/ui/Input";
+
 import cls from './SignInForm.module.scss';
-import {Icon} from "shared/ui/Icon";
-import apple from "shared/assets/icons/apple.svg";
-import google from "shared/assets/icons/google.svg";
-import {Input} from "shared/ui/Input";
-import {Button, ButtonTheme} from "shared/ui/Button";
-import {Link} from "react-router-dom";
-import {getRouteMain} from "shared/const/router";
 
 interface SignInFormProps {
   onClose?: () => void;
 }
 
-export const SignInForm = memo(({onClose}: SignInFormProps) => {
+export const SignInForm = memo(({ onClose }: SignInFormProps) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 

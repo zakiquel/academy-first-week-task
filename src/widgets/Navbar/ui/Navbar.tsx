@@ -1,14 +1,16 @@
-import {memo, useCallback, useState} from 'react';
-import {Link} from "react-router-dom";
-import {getRouteMain} from "shared/const/router";
-import {Icon} from "shared/ui/Icon";
+import { memo, useCallback, useState } from 'react';
+import { Link } from "react-router-dom";
+
+import { AuthModal,FormType } from '@/features/Authorization';
+import logo from "@/shared/assets/icons/app-logo.svg";
+import burger from "@/shared/assets/icons/burger.svg";
+import cross from "@/shared/assets/icons/cross.svg";
+import { getRouteMain } from "@/shared/const/router";
+import { Button, ButtonTheme } from "@/shared/ui/Button";
+import { Icon } from "@/shared/ui/Icon";
+
 import cls from './Navbar.module.scss';
-import logo from "shared/assets/icons/app-logo.svg";
-import burger from "shared/assets/icons/burger.svg";
-import cross from "shared/assets/icons/cross.svg";
-import {Button, ButtonTheme} from "shared/ui/Button";
-import {AuthModal} from "features/Authorization/ui/AuthModal/AuthModal";
-import {FormType} from "features/Authorization/model/types/forms";
+
 
 const menuItems: string[] = ['Menu', 'Blog', 'Pricing', 'Contacts'];
 

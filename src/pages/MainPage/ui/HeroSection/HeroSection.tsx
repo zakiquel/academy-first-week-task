@@ -1,16 +1,17 @@
-import {memo} from 'react';
-import cls from './HeroSection.module.scss';
-import {Button, ButtonTheme} from "shared/ui/Button";
-import trustPilot from 'shared/assets/icons/trustpilot.svg';
-import stars from 'shared/assets/icons/stars.svg';
-import food from 'shared/assets/icons/foodImg.png';
-import foodMini from 'shared/assets/icons/foodMini.png';
-import graph from 'shared/assets/icons/graph.png';
-import {Icon} from "shared/ui/Icon";
-import {AppImage} from "shared/ui/AppImage";
+import { memo } from 'react';
 
-export const HeroSection = memo(() => {
-  return (
+import food from '@/shared/assets/icons/foodImg.png';
+import foodMini from '@/shared/assets/icons/foodMini.png';
+import graph from '@/shared/assets/icons/graph.png';
+import stars from '@/shared/assets/icons/stars.svg';
+import trustPilot from '@/shared/assets/icons/trustpilot.svg';
+import { AppImage } from "@/shared/ui/AppImage";
+import { Button, ButtonTheme } from "@/shared/ui/Button";
+import { Icon } from "@/shared/ui/Icon";
+
+import cls from './HeroSection.module.scss';
+
+export const HeroSection = memo(() => (
     <section className={cls.HeroSection}>
       <div className={cls.container}>
         <article className={cls.heroHeader}>
@@ -22,7 +23,8 @@ export const HeroSection = memo(() => {
             <span> World</span>
           </h1>
           <p className={cls.text}>
-            EatLy help you set saving goals, earn cash back offers, Go to disclaimer for more details and get paychecks up to two days early.
+            EatLy help you set saving goals, earn cash back offers,
+            Go to disclaimer for more details and get paychecks up to two days early.
             <span>Get a $20 bonus.</span>
           </p>
           <div className={cls.btns}>
@@ -84,5 +86,4 @@ export const HeroSection = memo(() => {
         </article>
       </div>
     </section>
-  );
-});
+  ));

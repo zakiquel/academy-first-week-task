@@ -1,9 +1,10 @@
 import { memo } from 'react';
-import cls from './PurchaseSection.module.scss';
-import {purchase1, purchase2, purchase3, PurchaseGraph, PurchaseList} from "entities/Purchase";
 
-export const PurchaseSection = memo(() => {
-  return (
+import { purchase1, purchase2, purchase3, PurchaseGraph, PurchaseList } from "@/entities/Purchase";
+
+import cls from './PurchaseSection.module.scss';
+
+export const PurchaseSection = memo(() => (
     <section className={cls.PurchaseSection}>
       <div className={cls.purchaseContainer}>
         <div className={cls.purchaseHeader}>
@@ -19,5 +20,4 @@ export const PurchaseSection = memo(() => {
         <PurchaseGraph />
       </div>
     </section>
-  );
-});
+  ));

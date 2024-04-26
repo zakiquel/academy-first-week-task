@@ -1,4 +1,4 @@
-import {ProductType} from "entities/RestaurantCard";
+import { ProductType } from "@/entities/RestaurantCard";
 
 export interface Dish {
   id: string;

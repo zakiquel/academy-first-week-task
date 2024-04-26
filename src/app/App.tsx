@@ -1,6 +1,8 @@
 import React, { Suspense } from 'react';
+
 import { AppRouter } from './providers/router'
-import { Navbar } from "widgets/Navbar";
+
+import { Navbar } from "@/widgets/Navbar";
 
 function App() {
   return (

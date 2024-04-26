@@ -1,14 +1,16 @@
-import {memo} from 'react';
+import { memo } from 'react';
+
+import { Restaurant } from "../model/types/restaurant";
+
+import mark from "@/shared/assets/icons/book-mark.svg";
+import { classNames, Mods } from "@/shared/lib/classNames/classNames";
+import { AppImage } from "@/shared/ui/AppImage";
+import { Button, ButtonTheme } from "@/shared/ui/Button";
+import { Icon } from "@/shared/ui/Icon";
+
 import cls from './RestaurantCard.module.scss';
-import {Restaurant} from "../model/types/restaurant";
-import {AppImage} from "shared/ui/AppImage";
-import {Button, ButtonTheme} from "shared/ui/Button";
-import {Icon} from "shared/ui/Icon";
-import mark from "shared/assets/icons/book-mark.svg";
-import {classNames, Mods} from "shared/lib/classNames/classNames";
 
 interface RestaurantCardProps {
-  className?: string;
   restaurant: Restaurant;
 }
 

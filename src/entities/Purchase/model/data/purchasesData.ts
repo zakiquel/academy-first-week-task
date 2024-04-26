@@ -1,8 +1,9 @@
-import {Purchase} from "entities/Purchase";
-import food1 from "shared/assets/icons/food1.png";
-import food2 from "shared/assets/icons/food2.png";
-import food3 from "shared/assets/icons/food3.png";
-import {PurchaseStatus} from "entities/Purchase/model/types/purchase";
+import { Purchase } from '../..';
+import { PurchaseStatus } from '../types/purchase';
+
+import food1 from "@/shared/assets/icons/food1.png";
+import food2 from "@/shared/assets/icons/food2.png";
+import food3 from "@/shared/assets/icons/food3.png";
 
 export const purchase1: Purchase = {
   id: '1',

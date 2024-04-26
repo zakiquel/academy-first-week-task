@@ -1,9 +1,11 @@
-import {memo} from 'react';
+import { memo } from 'react';
+
+import { Restaurant, RestaurantCard, ProductType } from "@/entities/RestaurantCard";
+import arrow from '@/shared/assets/icons/arrow-right.svg'
+import { Button, ButtonTheme } from "@/shared/ui/Button";
+import { Icon } from "@/shared/ui/Icon";
+
 import cls from './RestaurantsSection.module.scss';
-import {Restaurant, RestaurantCard, ProductType} from "entities/RestaurantCard";
-import {Button, ButtonTheme} from "shared/ui/Button";
-import {Icon} from "shared/ui/Icon";
-import arrow from 'shared/assets/icons/arrow-right.svg'
 
 const rest1: Restaurant = {
   id: '1',
@@ -34,8 +36,7 @@ const rest3: Restaurant = {
 
 const restaurants = [rest1, rest2, rest3];
 
-export const RestaurantsSection = memo(() => {
-  return (
+export const RestaurantsSection = memo(() => (
     <section className={cls.RestaurantsSection}>
       <div className={cls.restaurantsContainer}>
         <h1 className={cls.title}>
@@ -63,5 +64,4 @@ export const RestaurantsSection = memo(() => {
         </div>
       </div>
     </section>
-  );
-});
+  ));

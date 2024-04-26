@@ -1,4 +1,5 @@
 import { memo } from 'react';
+
 import cls from './FeaturesSection.module.scss';
 
 const items: {num: string, text: string}[] = [
@@ -16,8 +17,7 @@ const items: {num: string, text: string}[] = [
   },
 ]
 
-export const FeaturesSection = memo(() => {
-  return (
+export const FeaturesSection = memo(() => (
     <div className={cls.FeaturesSection}>
       <div className={cls.container}>
         <ul className={cls.featuresList}>
@@ -37,5 +37,4 @@ export const FeaturesSection = memo(() => {
         </ul>
       </div>
     </div>
-  );
-});
+  ));

@@ -1,9 +1,14 @@
 import { memo } from 'react';
+
+import { FormType } from "../../model/types/forms";
+import { AuthForm } from '../AuthForm/AuthForm';
+import { ModalDecor } from '../ModalDecor/ModalDecor';
+
+
+import { Modal } from "@/shared/ui/Modal";
+
 import cls from './AuthModal.module.scss';
-import {AuthForm} from "features/Authorization/ui/AuthForm/AuthForm";
-import {ModalDecor} from "features/Authorization/ui/ModalDecor/ModalDecor";
-import {Modal} from "shared/ui/Modal";
-import {FormType} from "../../model/types/forms";
+
 
 interface AuthModalProps {
   isOpen: boolean;
@@ -11,8 +16,7 @@ interface AuthModalProps {
   form: FormType;
 }
 
-export const AuthModal = memo(({isOpen, onClose, form}: AuthModalProps) => {
-  return (
+export const AuthModal = memo(({ isOpen, onClose, form }: AuthModalProps) => (
     <Modal
       isOpen={isOpen}
       onClose={onClose}
@@ -24,5 +28,4 @@ export const AuthModal = memo(({isOpen, onClose, form}: AuthModalProps) => {
       />
       <ModalDecor />
     </Modal>
-  );
-});
+  ));

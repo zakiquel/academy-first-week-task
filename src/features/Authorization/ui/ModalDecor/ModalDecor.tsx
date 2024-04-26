@@ -1,12 +1,13 @@
 import { memo } from 'react';
-import cls from './ModalDecor.module.scss';
-import {AppImage} from "shared/ui/AppImage";
-import food from "shared/assets/icons/foodImg.png";
-import foodMini from "shared/assets/icons/foodMini.png";
-import graph from "shared/assets/icons/graph.png";
 
-export const ModalDecor = memo(() => {
-  return (
+import food from "@/shared/assets/icons/foodImg.png";
+import foodMini from "@/shared/assets/icons/foodMini.png";
+import graph from "@/shared/assets/icons/graph.png";
+import { AppImage } from "@/shared/ui/AppImage";
+
+import cls from './ModalDecor.module.scss';
+
+export const ModalDecor = memo(() => (
     <article className={cls.ModalDecor}>
       <div className={cls.preview}>
         <div className={cls.previewImage}>
@@ -50,5 +51,4 @@ export const ModalDecor = memo(() => {
         </p>
       </div>
     </article>
-  );
-});
+  ));

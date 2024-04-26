@@ -1,20 +1,22 @@
-import {memo} from 'react';
+import { memo } from 'react';
+import { Link } from "react-router-dom";
+
+import { FormType } from "../../model/types/forms";
+import { SignInForm } from "@/features/Authorization/ui/SignInForm/SignInForm";
+import { SignUpForm } from "../SignUpForm/SignUpForm";
+
+import logo from "@/shared/assets/icons/app-logo.svg";
+import { getRouteMain } from "@/shared/const/router";
+import { Icon } from "@/shared/ui/Icon";
+
 import cls from './AuthForm.module.scss';
-import {Link} from "react-router-dom";
-import {getRouteMain} from "shared/const/router";
-import {Icon} from "shared/ui/Icon";
-import logo from "shared/assets/icons/app-logo.svg";
-import {SignInForm} from "../SighInForm/SignInForm";
-import {SignUpForm} from "../SignUpForm/SignUpForm";
-import {FormType} from "../../model/types/forms";
 
 interface AuthFormProps {
   onClose?: () => void;
   form: FormType;
 }
 
-export const AuthForm = memo(({onClose, form}: AuthFormProps) => {
-  return (
+export const AuthForm = memo(({ onClose, form }: AuthFormProps) => (
     <div className={cls.AuthForm}>
       <div className={cls.container}>
         <Link
@@ -48,5 +50,4 @@ export const AuthForm = memo(({onClose, form}: AuthFormProps) => {
         </div>
       </div>
     </div>
-  );
-});
+  ));
