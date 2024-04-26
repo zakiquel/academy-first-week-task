@@ -83,39 +83,80 @@
   color: var(--purple);
 }
 
-.burgerBtn {
-  width: 30px;
-  height: 30px;
-  margin-left: 20px;
+.headerForm {
   position: relative;
+  transition: all 0.5s ease;
 }
 
-.burger-btn::before {
-  content: '';
-  position: absolute;
-  top: 0;
+.burger {
+  display: none;
+  position: relative;
+  z-index: 50;
+  align-items: center;
+  justify-content: flex-end;
   width: 30px;
-  background-color: var(--black);
-  height: 2px;
+  height: 18px;
 }
 
-.burger-btn::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  width: 30px;
-  background-color: var(--black);
-  height: 2px;
+.hidden {
+  display: none;
 }
 
 @media screen and (max-width: 760px) {
+  .burger {
+    display: flex;
+  }
 
+  .headerForm {
+    position: absolute;
+    right: 12%;
+  }
+
+  .headerMenu,
+  .active {
+    position: fixed;
+    height: 100%;
+    width: 60%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 50;
+    overflow-y: auto;
+    padding: 80px 40px 50px 10px;
+    background-color: var(--white);
+    transform: translateX(100%);
+
+    .menuLink {
+      font-size: 30px;
+      font-weight: 600;
+    }
+
+    ul {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  .active {
+    transform: translateX(0);
+  }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 450px) {
+  .headerForm {
+    display: none;
+  }
 
-}
+  .active {
+    width: 90%;
+  }
 
-@media screen and (max-width: 390px) {
+  .hidden {
+    display: flex;
 
+    .loginButton,
+    .signUpButton {
+      width: 60%;
+    }
+  }
 }

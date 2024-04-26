@@ -112,3 +112,9 @@
     text-align: center;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .mobileContainer {
+    padding-top: 50px;
+  }
+}

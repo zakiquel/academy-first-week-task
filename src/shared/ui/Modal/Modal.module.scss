@@ -25,10 +25,9 @@
 .content {
   background: var(--white);
   position: relative;
-  display: flex;
+  width: 90%;
   max-width: 1450px;
-  margin: 25px auto;
-  transform: translateY(-110%);
+  transform: translateY(-100%);
   transition: transform 0.3s ease;
 }
 
@@ -47,3 +46,37 @@
     transform: translateY(-110%);
   }
 }
+
+.close {
+  background-color: var(--purple);
+  border: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 2;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+
+  span {
+    color: var(--white);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .content {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .close {
+    background-color: var(--white);
+
+    span {
+      color: var(--purple);
+    }
+  }
+}
+
+

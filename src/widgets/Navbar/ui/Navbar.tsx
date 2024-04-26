@@ -4,6 +4,8 @@ import {getRouteMain} from "shared/const/router";
 import {Icon} from "shared/ui/Icon";
 import cls from './Navbar.module.scss';
 import logo from "shared/assets/icons/app-logo.svg";
+import burger from "shared/assets/icons/burger.svg";
+import cross from "shared/assets/icons/cross.svg";
 import {Button, ButtonTheme} from "shared/ui/Button";
 import {AuthModal} from "features/Authorization/ui/AuthModal/AuthModal";
 import {FormType} from "features/Authorization/model/types/forms";
@@ -28,6 +30,8 @@ export const Navbar = memo(() => {
     setIsModalOpen(false);
   }, []);
 
+  const [active, setActive] = useState(false);
+
   return (
     <header className={cls.Navbar}>
       <div className={cls.container}>
@@ -41,7 +45,7 @@ export const Navbar = memo(() => {
             />
             <span>eatly</span>
           </Link>
-          <nav className={cls.headerMenu}>
+          <nav className={active ? cls.active : cls.headerMenu}>
             <ul className={cls.headerList}>
               {menuItems.map((item) => (
                 <li
@@ -56,6 +60,24 @@ export const Navbar = memo(() => {
                   </Link>
                 </li>
               ))}
+              <li className={cls.hidden}>
+                <Button
+                  className={cls.loginButton}
+                  theme={ButtonTheme.PURPLE}
+                  onClick={logInHandler}
+                >
+                  <span>Login</span>
+                </Button>
+              </li>
+              <li className={cls.hidden}>
+                <Button
+                  className={cls.signUpButton}
+                  theme={ButtonTheme.PURPLE}
+                  onClick={signUpHandler}
+                >
+                  <span>Sign Up</span>
+                </Button>
+              </li>
             </ul>
           </nav>
           <div className={cls.headerForm}>
@@ -74,6 +96,15 @@ export const Navbar = memo(() => {
               <span>Sign Up</span>
             </Button>
           </div>
+          <Button
+            theme={ButtonTheme.CLEAR}
+            className={cls.burger}
+            onClick={() => setActive(!active)}
+          >
+            <Icon
+              Svg={active ? cross : burger}
+            />
+          </Button>
         </div>
       </div>
       <AuthModal form={formType} isOpen={isModalOpen} onClose={onCloseModal}/>

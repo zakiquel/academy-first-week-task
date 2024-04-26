@@ -83,6 +83,12 @@ export const Modal = (props: ModalProps) => {
             className={cls.content}
             onClick={onContentClick}
           >
+            <button
+              className={cls.close}
+              onClick={closeHandler}
+            >
+              <span>×</span>
+            </button>
             {children}
           </div>
         </div>

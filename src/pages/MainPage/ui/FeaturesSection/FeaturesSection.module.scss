@@ -30,6 +30,10 @@
   border-right: 1px solid var(--light);
 }
 
+.featuresItem:nth-child(3n) {
+  border: none;
+}
+
 .featuresNum {
   color: #ffffff;
   font-weight: 700;
