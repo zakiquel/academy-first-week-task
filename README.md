@@ -92,26 +92,32 @@ npm run start:dev - запуск сервера + frontend проекта в dev
 
 Для проекта были написаны собственные UI-компоненты, которые хранятся в /shared/ui
 
-- [AppImage](/src/shared/ui/AppImage) 
+- [AppImage](/src/shared/ui/AppImage)
+
 Компонент для работы с изображениями. Позволяет отрисовывать некоторый fallback,
 пока картинка загружается, и отдельный fallback в случае ошибки при загрузке изображения.
 
-- [Button](/src/shared/ui/Button)  
+- [Button](/src/shared/ui/Button)
+
 Компонент кнопки. Включает в себя стандартные методы для кнопки + отдельными пропсами
 мы можем задать стандартизированный размер, тему кнопки, радиус и т.д.
 
-- [Modal](/src/shared/ui/Modal)  
+- [Modal](/src/shared/ui/Modal) 
+
 Modal - компонент модального окна, содержит все необходимые слушатели событий, иконку закрытия,
 анимацию открытия/закрытия и обернут в React Portal.
 
-- [Select](/src/shared/ui/Select)  
+- [Select](/src/shared/ui/Select)
+
 Переиспользуемый компонент select`a. Типизирует стандартный select с помощью Generic props.
 
 - [Loader](/src/shared/ui/Loader)
+
 Компонент который может отображаться в качестве лоадера. Представляет из себя анимированную
 крутящуюся окружность.
 
 - [Portal](/src/shared/ui/Portal)
+
 Компонент портала, телепортирует переданную ReactNode в указанный HTMLElement.
 
 ----
