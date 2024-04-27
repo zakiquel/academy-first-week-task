@@ -11,7 +11,7 @@ import { Input } from "@/shared/ui/Input";
 import cls from './SignInForm.module.scss';
 
 interface SignInFormProps {
-  onClose?: () => void;
+  onClose: () => void;
 }
 
 export const SignInForm = memo(({ onClose }: SignInFormProps) => {

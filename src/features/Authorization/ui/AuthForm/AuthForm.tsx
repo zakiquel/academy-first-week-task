@@ -12,7 +12,7 @@ import { Icon } from "@/shared/ui/Icon";
 import cls from './AuthForm.module.scss';
 
 interface AuthFormProps {
-  onClose?: () => void;
+  onClose: () => void;
   form: FormType;
 }
 

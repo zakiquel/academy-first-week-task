@@ -1,8 +1,6 @@
 import { memo } from 'react';
 
-import { Review } from "../../../../entities/Review/model/types/review";
-
-import { ReviewCard } from '@/entities/Review';
+import { Review, ReviewCard } from "@/entities/Review";
 import { classNames } from "@/shared/lib/classNames/classNames";
 
 import cls from './ReviewSection.module.scss';

@@ -1,3 +1,3 @@
 export { RestaurantCard } from './ui/RestaurantCard/RestaurantCard'
-export type { Restaurant } from "@/entities/Restaurant/model/types/restaurant";
-export { ProductType } from "@/entities/Restaurant/model/types/restaurant";
+export type { Restaurant } from "./model/types/restaurant";
+export { ProductType } from "./model/types/restaurant";

@@ -13,7 +13,7 @@ export interface PurchaseItemProps {
 }
 
 export const PurchaseItem = memo(({ stat, className }: PurchaseItemProps) => (
-    <li className={classNames(cls[className])}>
+    <li className={classNames('', {},[className])}>
       <div className={cls.itemInner}>
         <Icon
           Svg={stat.logo}

@@ -1,7 +1,7 @@
 import { memo, useCallback, useState } from 'react';
 import { Link } from "react-router-dom";
 
-import { AuthModal,FormType } from '@/features/Authorization';
+import { AuthModal, FormType } from '@/features/Authorization';
 import logo from "@/shared/assets/icons/app-logo.svg";
 import burger from "@/shared/assets/icons/burger.svg";
 import cross from "@/shared/assets/icons/cross.svg";
@@ -16,7 +16,7 @@ const menuItems: string[] = ['Menu', 'Blog', 'Pricing', 'Contacts'];
 
 export const Navbar = memo(() => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [formType, setFormType] = useState(null);
+  const [formType, setFormType] = useState(FormType.SIGNUP);
 
   const logInHandler = () => {
     setFormType(FormType.SIGNIN);

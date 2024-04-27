@@ -11,7 +11,7 @@ import { Icon } from "@/shared/ui/Icon";
 import { Input } from "@/shared/ui/Input";
 
 interface SignUpFormProps {
-  onClose?: () => void;
+  onClose: () => void;
 }
 
 export const SignUpForm = memo(({ onClose }: SignUpFormProps) => {
