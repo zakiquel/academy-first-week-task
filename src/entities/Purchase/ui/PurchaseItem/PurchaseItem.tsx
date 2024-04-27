@@ -8,12 +8,12 @@ import { Icon } from "@/shared/ui/Icon";
 import cls from './PurchaseItem.module.scss';
 
 export interface PurchaseItemProps {
-  className?: string;
+  className: string;
   stat: Stat;
 }
 
 export const PurchaseItem = memo(({ stat, className }: PurchaseItemProps) => (
-    <li className={classNames('', {},[className])}>
+    <li className={classNames(cls[className])}>
       <div className={cls.itemInner}>
         <Icon
           Svg={stat.logo}

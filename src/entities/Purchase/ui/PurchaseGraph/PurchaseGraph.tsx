@@ -26,6 +26,8 @@ const purchase2: Stat = {
 }
 
 export const PurchaseGraph = memo(() => {
+  const [selectValue, setSelectValue] = useState('');
+
   const timeOptions = useMemo<SelectOption<string>[]>(
     () => [
       {
@@ -42,7 +44,6 @@ export const PurchaseGraph = memo(() => {
       },
     ], []
   );
-  const [selectValue, setSelectValue] = useState('');
 
   return (
     <article className={cls.PurchaseGraph}>
