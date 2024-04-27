@@ -92,72 +92,78 @@ npm run start:dev - запуск сервера + frontend проекта в dev
 
 Для проекта были написаны собственные UI-компоненты, которые хранятся в /shared/ui
 
-- [AppImage](/src/shared/ui/AppImage)
+- ### [AppImage](/src/shared/ui/AppImage)
 
 Компонент для работы с изображениями. Позволяет отрисовывать некоторый fallback,
 пока картинка загружается, и отдельный fallback в случае ошибки при загрузке изображения.
 
-- [Button](/src/shared/ui/Button)
+- ### [Button](/src/shared/ui/Button)
 
 Компонент кнопки. Включает в себя стандартные методы для кнопки + отдельными пропсами
 мы можем задать стандартизированный размер, тему кнопки, радиус и т.д.
 
-- [Modal](/src/shared/ui/Modal) 
+- ### [Modal](/src/shared/ui/Modal) 
 
 Компонент модального окна, содержит все необходимые слушатели событий, иконку закрытия,
 анимацию открытия/закрытия и обернут в React Portal.
 
-- [Select](/src/shared/ui/Select)
+- ### [Select](/src/shared/ui/Select)
 
 Переиспользуемый компонент select`a. Типизирует стандартный select с помощью Generic props.
 
-- [Loader](/src/shared/ui/Loader)
+- ### [Loader](/src/shared/ui/Loader)
 
 Компонент который может отображаться в качестве лоадера. Представляет из себя анимированную
 крутящуюся окружность.
 
-- [Portal](/src/shared/ui/Portal)
+- ### [Portal](/src/shared/ui/Portal)
 
 Компонент портала, телепортирует переданную ReactNode в указанный HTMLElement.
 
 ----
 
 ## Сущности (entities)
-- [DishCard](/src/entities/DishCard)
+- ### [DishCard](/src/entities/DishCard)
 
 Сущность описывающая карточку блюда. Содержит: изображение блюда, название,
 тип, время приготовления, рейтинг и стоимость.
 
 
-- [RestaurantCard](/src/entities/RestaurantCard)
+- ### [RestaurantCard](/src/entities/RestaurantCard)
 
 Сущность описывающая карточку ресторана. Содержит: изображение ресторана, название,
 тип, время, рейтинг.
 
-- [Purchase](/src/entities/Purchase)
+- ### [Purchase](/src/entities/Purchase)
 
 Сущность описывающая отзыв покупателя. Содержит: аватар, имя, слоган,
 комментарий, рейтинг.
 
 ## Фичи (features)
 
-- [Authorization](/src/features/Authorization)
+- ### [Authorization](/src/features/Authorization)
 
 Фича авторизации. В папке model хранятся связанные типы, 
 предполагается что в будущем там же будет и стэйт.
 
-В папке ui хранятся:
+В /Authorization/ui находятся:
+   
 
-- AuthModal - модальное окно с формой AuthForm.
-
-- AuthForm отрисовывает форму авторизации, в зависимости от типа переданной формы 
-(SIGNIN/SIGNUP) в нее монтируется либо SignInForm, либо SignUpForm.
-
-- SignInForm форма логина.
-
-- SignUpForm форма регистрации.
-
-- ModalDecor - визуальный компонент модального окна, не содержит бизнес-логики.
+   - [AuthModal](/src/features/Authorization/ui/AuthModal) - Модальное окно с формой.
+   
+   
+   - [AuthForm](/src/features/Authorization/ui/AuthForm) - Отрисовывает форму авторизации, в зависимости от типа 
+   переданной формы (SIGNIN/SIGNUP) в нее монтируется либо SignInForm, либо SignUpForm.
+   
+   
+   - [SignInForm](/src/features/Authorization/ui/SignInForm) - Форма логина.
+   
+   
+   - [SignUpForm](/src/features/Authorization/ui/SignUpForm) - Форма регистрации.
+   
+   
+   - [ModalDecor](/src/features/Authorization/ui/ModalDecor) - Визуальный компонент модального окна, не содержит бизнес-
+   логики.
 
 
 
