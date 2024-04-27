@@ -1,8 +1,8 @@
 import { memo } from 'react';
 
-import { Review } from "../../model/types/review";
-import { ReviewCard } from '../ReviewCard/ReviewCard';
+import { Review } from "../../../../entities/Review/model/types/review";
 
+import { ReviewCard } from '@/entities/Review';
 import { classNames } from "@/shared/lib/classNames/classNames";
 
 import cls from './ReviewSection.module.scss';

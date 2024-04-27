@@ -6,7 +6,7 @@ import { HeroSection } from "../HeroSection/HeroSection";
 import { MobileSection } from "../MobileSection/MobileSection";
 import { PurchaseSection } from "../PurchaseSection/PurchaseSection";
 import { RestaurantsSection } from "../RestaurantsSection/RestaurantsSection";
-import { ReviewSection } from "../ReviewSection/ui/ReviewSection/ReviewSection";
+import { ReviewSection } from "../ReviewSection/ReviewSection";
 import { SaleBlock } from "../SaleBlock/SaleBlock";
 
 import { Footer } from "@/widgets/Footer";

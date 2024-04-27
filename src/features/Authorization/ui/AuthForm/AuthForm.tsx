@@ -2,7 +2,7 @@ import { memo } from 'react';
 import { Link } from "react-router-dom";
 
 import { FormType } from "../../model/types/forms";
-import { SignInForm } from "@/features/Authorization/ui/SignInForm/SignInForm";
+import { SignInForm } from '../SignInForm/SignInForm';
 import { SignUpForm } from "../SignUpForm/SignUpForm";
 
 import logo from "@/shared/assets/icons/app-logo.svg";

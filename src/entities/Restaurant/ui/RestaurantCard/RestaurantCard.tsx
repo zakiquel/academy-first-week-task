@@ -1,6 +1,6 @@
 import { memo } from 'react';
 
-import { Restaurant } from "../model/types/restaurant";
+import { Restaurant } from '../../model/types/restaurant';
 
 import mark from "@/shared/assets/icons/book-mark.svg";
 import { classNames, Mods } from "@/shared/lib/classNames/classNames";

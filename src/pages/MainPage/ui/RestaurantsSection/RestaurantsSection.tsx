@@ -1,6 +1,6 @@
 import { memo } from 'react';
 
-import { Restaurant, RestaurantCard, ProductType } from "@/entities/RestaurantCard";
+import { Restaurant, RestaurantCard, ProductType } from "@/entities/Restaurant";
 import arrow from '@/shared/assets/icons/arrow-right.svg'
 import { Button, ButtonTheme } from "@/shared/ui/Button";
 import { Icon } from "@/shared/ui/Icon";

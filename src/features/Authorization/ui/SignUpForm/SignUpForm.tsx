@@ -1,7 +1,7 @@
 import { memo, useState } from 'react';
 import { Link } from "react-router-dom";
 
-import cls from '@/features/Authorization/ui/SignInForm/SignInForm.module.scss';
+import cls from '../SignInForm/SignInForm.module.scss';
 
 import apple from "@/shared/assets/icons/apple.svg";
 import google from "@/shared/assets/icons/google.svg";

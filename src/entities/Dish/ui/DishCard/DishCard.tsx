@@ -1,6 +1,6 @@
 import { memo } from 'react';
 
-import { Dish } from "../model/types/dish";
+import { Dish } from '../../model/types/dish';
 
 import fav from '@/shared/assets/icons/fav.svg';
 import plus from '@/shared/assets/icons/plus.svg';

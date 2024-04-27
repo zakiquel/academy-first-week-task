@@ -1,7 +1,7 @@
 import { memo } from 'react';
 
-import { Dish, DishCard } from "@/entities/DishCard";
-import { ProductType } from "@/entities/RestaurantCard";
+import { Dish, DishCard } from "@/entities/Dish";
+import { ProductType } from "@/entities/Restaurant";
 import arrow from "@/shared/assets/icons/arrow-right.svg";
 import { Button, ButtonTheme } from "@/shared/ui/Button";
 import { Icon } from "@/shared/ui/Icon";
