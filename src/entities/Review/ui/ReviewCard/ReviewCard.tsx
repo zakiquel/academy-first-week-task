@@ -12,10 +12,11 @@ import cls from './ReviewCard.module.scss';
 
 interface ReviewCardProps {
   className?: string;
+  onClick?: () => void;
   review: Review;
 }
 
-export const ReviewCard = memo(({ review, className }: ReviewCardProps) => {
+export const ReviewCard = memo(({ review, className, onClick }: ReviewCardProps) => {
   const renderStars = () => {
     const stars = [];
     for (let i = 0; i < review.rating; i += 1) {
@@ -31,7 +32,10 @@ export const ReviewCard = memo(({ review, className }: ReviewCardProps) => {
   };
 
   return (
-    <article className={classNames(cls.reviewItem, {}, [className])}>
+    <article
+      className={classNames(cls.reviewItem, {}, [className])}
+      onClick={onClick}
+    >
       <div className={cls.reviewHeader}>
         <AppImage
           className={cls.image}
