@@ -39,6 +39,7 @@ module.exports = {
     'no-shadow': 'off',
     'import/extensions': 'off',
     'import/no-extraneous-dependencies': 'off',
+    'jsx-a11y/no-noninteractive-element-interactions': 'off',
     'no-underscore-dangle': 'off',
     'max-len': ['error', { ignoreComments: true, code: 130 }],
     'jsx-a11y/no-static-element-interactions': 'off',
@@ -51,7 +52,7 @@ module.exports = {
     'jsx-a11y/control-has-associated-label': 'off',
     'no-undef': 'off',
     'react/no-array-index-key': 'off',
-    'zavalition-fsd/path-checker': ['error', {alias: '@'}],
+    'zavalition-fsd/path-checker': ['error', { alias: '@' }],
     'zavalition-fsd/layer-imports': [
       'error',
       {
