@@ -1,0 +1,51 @@
+.Purchase {
+  box-shadow: 0 20px 30px var(--box-shadow);
+  border: 1px solid var(--border);
+  margin-bottom: 10px;
+  background: var(--white);
+  border-radius: 16px;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.purchaseImg {
+  max-width: 23%;
+  margin-right: 20px;
+}
+
+.image {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.purchaseInfo {
+  width: 100%;
+}
+
+.purchaseName {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0 0 5px;
+}
+
+.purchaseStatus {
+  font-weight: 500;
+  font-size: 10px;
+  margin: 0 0 5px;
+}
+
+.purchaseTime {
+  text-align: right;
+  font-weight: 500;
+  font-size: 11px;
+  color: var(--light-grey);
+}
+
+.Cancelled {
+  color: var(--red);
+}
+
+.Delivered {
+  color: var(--green);
+}

@@ -1,0 +1,45 @@
+.purchaseContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  column-gap: 10px;
+  border-bottom: 1px solid var(--light-grey);
+  padding: 100px 15px 120px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.purchaseHeader {
+  flex: 0 1 50%;
+}
+
+.title {
+  text-align: left;
+  margin: 0 0 50px;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 1.15;
+
+  span {
+    color: var(--purple);
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .purchaseContainer {
+    display: block;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .title {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+
+}
+

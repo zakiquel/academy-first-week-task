@@ -1,7 +1,8 @@
-import {createRoot} from "react-dom/client";
-import App from "./app/App";
-import {BrowserRouter} from "react-router-dom";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 
+import App from "./app/App";
+import './app/styles/index.scss'
 
 const container = document.getElementById('root');
 

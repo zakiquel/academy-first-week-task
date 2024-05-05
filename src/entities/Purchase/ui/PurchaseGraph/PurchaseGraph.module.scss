@@ -1,0 +1,62 @@
+.PurchaseGraph {
+  flex: 0 1 47%;
+  border-radius: 25px;
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 30px 20px var(--box-shadow);
+  padding: 43px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 28px;
+}
+
+.select {
+  font-weight: 600;
+  font-size: 19px;
+  letter-spacing: 0.6px;
+  color: var(--black-purple);
+  padding: 12px 18px;
+  border-radius: 13px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1050px) {
+  .PurchaseGraph {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .PurchaseGraph {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .select {
+    padding: 10px 12px;
+
+    select {
+      padding: 0;
+    }
+  }
+}

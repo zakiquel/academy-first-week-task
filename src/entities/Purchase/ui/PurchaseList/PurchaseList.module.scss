@@ -1,0 +1,24 @@
+.PurchaseList {
+  display: grid;
+  grid-template-columns: 0.7fr;
+}
+
+@media screen and (max-width: 1050px) {
+  .PurchaseList {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .PurchaseList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .PurchaseList {
+    grid-template-columns: 1fr;
+  }
+}

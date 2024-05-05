@@ -1,0 +1,162 @@
+.Navbar {
+  position: sticky;
+  top: 0;
+  z-index: 8;
+  background-color: var(--white);
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.headerBody {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0 25px;
+  border-bottom: 2px solid var(--light);
+  column-gap: 3%;
+}
+
+.headerLogo {
+  display: flex;
+  align-items: center;
+
+  span {
+    margin-left: 5px;
+    font-size: 21px;
+    font-family: var(--font-family-text);
+    font-weight: 700;
+    color: var(--purple);
+  }
+}
+
+.headerMenu {
+  flex: 1 1 auto;
+}
+
+.headerList {
+  display: flex;
+}
+
+.menuItem {
+  margin-right: 30px;
+}
+
+.menuLink {
+  font-size: 18px;
+  color: var(--grey);
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover,
+  {
+    color: var(--purple);
+  }
+
+  &:focus {
+    outline: 2px solid var(--purple);
+    border-radius: 2px;
+  }
+}
+
+.loginButton {
+  margin-right: 35px;
+  color: var(--grey);
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.signUpButton {
+  span {
+    font-weight: 700;
+  }
+}
+
+.signUpButton:hover {
+  background-color: var(--white);
+  color: var(--purple);
+}
+
+.headerForm {
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.burger {
+  display: none;
+  position: relative;
+  z-index: 50;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30px;
+  height: 18px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 760px) {
+  .burger {
+    display: flex;
+  }
+
+  .headerForm {
+    position: absolute;
+    right: 12%;
+  }
+
+  .headerMenu,
+  .active {
+    position: fixed;
+    height: 100%;
+    width: 60%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 50;
+    overflow-y: auto;
+    padding: 80px 40px 50px 10px;
+    background-color: var(--white);
+    transform: translateX(100%);
+
+    .menuLink {
+      font-size: 30px;
+      font-weight: 600;
+    }
+
+    ul {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  .active {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .headerForm {
+    display: none;
+  }
+
+  .active {
+    width: 90%;
+  }
+
+  .hidden {
+    display: flex;
+
+    .loginButton,
+    .signUpButton {
+      width: 60%;
+    }
+  }
+}

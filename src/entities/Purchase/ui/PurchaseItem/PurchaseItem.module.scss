@@ -1,0 +1,91 @@
+.itemInner {
+  display: flex;
+  align-items: center;
+}
+
+.purple,
+.orange {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 19px;
+  padding: 25px 25px 55px;
+}
+
+.purple::before,
+.orange::before {
+  content: "";
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  right: 25px;
+  height: 9px;
+  border-radius: 78px;
+  opacity: 0.2;
+}
+
+.purple::before {
+  background-color: var(--purple);
+}
+
+.orange::before {
+  background-color: var(--orange);
+}
+
+.purple::after,
+.orange::after {
+  width: 70%;
+  content: "";
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  right: 25px;
+  height: 9px;
+  border-radius: 78px;
+}
+
+.purple::after {
+  background-color: var(--purple);
+}
+
+.orange::after {
+  background-color: var(--orange);
+}
+
+.about {
+  margin-left: 15px;
+  letter-spacing: 0.6px;
+}
+
+.name {
+  font-weight: 800;
+  font-size: 19px;
+  margin-bottom: 7px;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--light-grey);
+  margin: 0;
+}
+
+.cost {
+  font-weight: 800;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 500px) {
+  .cost {
+    margin-top: 10px;
+  }
+
+  .purple,
+  .orange {
+    flex-direction: column;
+    justify-content: left;
+  }
+}

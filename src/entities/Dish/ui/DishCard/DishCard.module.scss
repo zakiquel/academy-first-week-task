@@ -1,0 +1,111 @@
+.DishCard {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  box-shadow: 7px 82px 41px var(--box-shadow);
+  border-radius: 35px;
+  overflow: hidden;
+  padding: 17px;
+  position: relative;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.DishImage {
+  text-align: center;
+}
+
+.Image {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.DishType {
+  font-size: 12px;
+  margin-bottom: 7px;
+  max-width: fit-content;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
+.DishName {
+  font-weight: 600;
+  font-size: 23px;
+  margin: 0 0 3px;
+}
+
+.DishInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.duration {
+  font-size: 17px;
+  color: var(--light-grey);
+  margin-right: 30px;
+}
+
+.rating {
+  font-size: 17px;
+  color: var(--light-grey);
+  position: relative;
+}
+
+.rating::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 20%;
+  right: 100%;
+  background: url(https://live.verstaem.online/eatly/src/img/decor/star.svg) top center no-repeat;
+}
+
+.DishBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  columns: 5px;
+}
+
+.DishCost {
+  font-weight: 700;
+  font-size: 26px;
+
+  &span {
+    color: var(--light-grey);
+    font-size: 20px;
+  }
+}
+
+.DishPlus {
+  background-color: var(--black-purple);
+  padding: 10px 10px 5px;
+  border-radius: 9px;
+}
+
+.DishFav {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.Healthy {
+  color: var(--green);
+  background-color: var(--green-overlay);
+}
+
+.Trending {
+  color: var(--orange);
+  background-color: var(--orange-overlay);
+}
+
+.Supreme {
+  color: var(--red);
+  background-color: var(--red-overlay);
+}
+

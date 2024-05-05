@@ -1,0 +1,133 @@
+.ModalDecor {
+  position: relative;
+  flex: 0 1 50%;
+  background-color: var(--purple);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ModalDecor::before {
+  content: "";
+  position: absolute;
+  top: 16%;
+  left: 10%;
+  width: 57px;
+  height: 57px;
+  border: 1px solid var(--light-grey);
+}
+
+.ModalDecor::after {
+  content: "";
+  position: absolute;
+  top: 16%;
+  left: 10%;
+  width: 57px;
+  height: 57px;
+  background-color: var(--decor-bg);
+  transform: translate(-50%, -50%);
+}
+
+.preview {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.content {
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.previewImage {
+  position: relative;
+}
+
+.image {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.previewMeal {
+  position: absolute;
+  bottom: 80%;
+  width: 60%;
+  left: 50%;
+}
+
+.mealInner {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 15px 20px var(--grey);
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.innerImage {
+  max-width: 20%;
+  margin-right: 20px;
+}
+
+.innerInfo {
+  width: 100%;
+
+  h2 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 10px;
+    font-weight: 500;
+  }
+}
+
+.innerTime {
+  text-align: right;
+  font-size: 11px;
+}
+
+.graph {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  max-width: 50%;
+}
+
+.graphInner {
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 5px 0;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 40px;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--white);
+  opacity: 0.7;
+  margin: 0;
+}
+
+@media screen and (max-width: 1500px) {
+  .previewMeal {
+    left: 35%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+ .ModalDecor {
+   display: none;
+ }
+}
